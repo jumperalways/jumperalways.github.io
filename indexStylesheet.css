@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(0,0,0);
+  color:rgb(218,223,206);
+  font-family: "Bookman",serif;
+}
+h1 {
+  background-color: inherit;
+}
+h2 {
+  border-color: rgb(150,150,150);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+h3 {
+  margin-left:10px;
+  margin-top:10px;
+  margin-bottom:4px;
+  //clear:left;
+}
+div {
+  clear:both;
+}
+
+table {
+  font-family: "Courier New",monospace;
+  width: 100%;
+}
+
+th {
+  margin: 5px;
+  padding: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(239,241,235);
+  width: 25%;
+  //a hundred divided by number of headers
+}
+
+#toc {// ToC
+  text-decoration: none;
+  background-color: rgb(50,50,50);
+  border-style: solid;
+  border-width: 1px;
+  padding-right:25px;
+  margin:10px;
+  display: table;
+
+}
+
+#toc a {
+  text-decoration: none;
+  color:inherit;
+}
+
+/* #nav-table a */
+
+img {
+  margin:10px;
+  //float:right;
+}
+
+#title-img {
+  float:right;
+}
+
+.imageCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#notes {
+  font-size: 13px;
+  font-family: monospace;
+}
+.redColor {
+  color:rgb(255,0,0);
+}
+.pinkColor {
+  color:rgb(255,174,201);
+}
+.greenColor {
+  color:rgb(34,177,76);
+}
+.grayColor {
+  color:rgb(150,150,150);
+}
