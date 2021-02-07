@@ -44,12 +44,12 @@ th {
   padding-right:25px;
   margin:10px;
   display: table;
-
 }
 
 #toc a {
   text-decoration: none;
   color:inherit;
+  font-size: 18px;
 }
 
 /* #nav-table a */
@@ -85,4 +85,20 @@ img {
 }
 .grayColor {
   color:rgb(150,150,150);
+}
+
+.char-img {
+  float:left;
+  clear:left;
+}
+
+
+.char-description {
+  position:absolute;
+  left: 100px;
+  //clear:left;
+}
+
+.go-back {
+  //position: absolute;
 }
