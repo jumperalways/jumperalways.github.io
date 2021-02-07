@@ -7,18 +7,21 @@ h1 {
   background-color: inherit;
 }
 h2 {
+  padding:5px;
   border-color: rgb(150,150,150);
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  clear:both;
 }
 h3 {
   margin-left:10px;
   margin-top:10px;
   margin-bottom:4px;
-  //clear:left;
+  /*clear:left;*/
 }
+
 div {
-  clear:both;
+  word-wrap: break-word;
 }
 
 table {
@@ -87,18 +90,23 @@ img {
   color:rgb(150,150,150);
 }
 
-.char-img {
-  float:left;
-  clear:left;
+
+div.charDiv {
+  position:relative;
+  width: auto;
+  height: 200px;
 }
 
-
-.char-description {
+div.charImg {
   position:absolute;
-  left: 100px;
-  //clear:left;
+  top:5px;
+  left:5px;
 }
 
-.go-back {
-  //position: absolute;
+div.charDescription {
+  position:absolute;
+  top:5px;
+  left:100px;
+  right:5px;
+  width:auto;
 }
