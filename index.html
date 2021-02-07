@@ -1,104 +1,120 @@
-body {
-  background-color: rgb(0,0,0);
-  color:rgb(218,223,206);
-  font-family: "Bookman",serif;
-}
-h1 {
-  background-color: inherit;
-}
-h2 {
-  border-color: rgb(150,150,150);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
-h3 {
-  margin-left:10px;
-  margin-top:10px;
-  margin-bottom:4px;
-  //clear:left;
-}
-div {
-  clear:both;
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miserere Wiki</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="indexStylesheet.css">
+        <style></style>
+    </head>
 
-table {
-  font-family: "Courier New",monospace;
-  width: 100%;
-}
+    <body>
+      <h1><img src="miserereTitle.png" alt="MISERERE" class="imageCenter"></h1>
 
-th {
-  margin: 5px;
-  padding: 5px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(239,241,235);
-  width: 25%;
-  //a hundred divided by number of headers
-}
+      <table id="nav-table">
+        <thead>
+          <tr>
+            <th>Locations</th>
+            <th>Items</th>
+            <th>Events</th>
+            <th>Ending</th>
+          </tr>
+        </thead>
+      </table>
 
-#toc {// ToC
-  text-decoration: none;
-  background-color: rgb(50,50,50);
-  border-style: solid;
-  border-width: 1px;
-  padding-right:25px;
-  margin:10px;
-  display: table;
-}
+      <p>
+        <em>Miserere</em> is an atypical yume nikki fangame created by <em>owl</em>. The dream world is HUGE, and absolutely abysmal. You collect <strong>items</strong>, NOT effects in this game. Visit the <a target="_blank"  href="https://yumenikkifg.fandom.com/wiki/Miserere">official fandom wiki page</a> for download info among other things. However there is no substantial amount of info on fandom to help you crack the game. Hopefully this pet project will help you through <em>Miserere</em>. Enjoy the game!
+      </p>
 
-#toc a {
-  text-decoration: none;
-  color:inherit;
-  font-size: 18px;
-}
-
-/* #nav-table a */
-
-img {
-  margin:10px;
-  //float:right;
-}
-
-#title-img {
-  float:right;
-}
-
-.imageCenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-#notes {
-  font-size: 13px;
-  font-family: monospace;
-}
-.redColor {
-  color:rgb(255,0,0);
-}
-.pinkColor {
-  color:rgb(255,174,201);
-}
-.greenColor {
-  color:rgb(34,177,76);
-}
-.grayColor {
-  color:rgb(150,150,150);
-}
-
-.char-img {
-  float:left;
-  clear:left;
-}
+    <div id="toc">
+      <h3>Guide</h3>
+      <ul>
+        <li><a href="#reality-world">Reality World</a></li>
+        <li><a href="#dream-world-1">Dream world 1</a></li>
+        <li><a href="#dream-world-2">Dream world 2</a></li>
+        <li><a href="#chars">Characters</a></li>
+      </ul>
+    </div> <!--end of toc-->
 
 
-.char-description {
-  position:absolute;
-  left: 100px;
-  //clear:left;
-}
+    <p>
+      <img id="title-img" src="titleImg.png" alt="title image of game" width="200px">
+      The game can be divided into <strong>2 stages</strong>. You have to clear the 1st stage (namely <strong>Dream World 1</strong>) to proceed to the 2nd stage (<strong>Dream World 2</strong>). The 1st stage is more about exploring the dream world, collecting items and helping NPCs. In the 2nd stage, you will find out more about the past of protagonist. <em>Miserere</em> does have a strong storyline compared to other ynfgs.
+    </p>
 
-.go-back {
-  //position: absolute;
-}
+    <div id="reality-world">
+      <h2>Reality World</h2>
+      <p>The red-haired protagonist lives in space station(?). You first wake up in the living room. The room will have subtle changes as you make progress in the game. There are two bedrooms where you can sleep, the one next to the living room, and the one in the utility room. </p>
+      <p>At first, you can only sleep in <strong>Bedroom 1</strong> and explore Dream World 1. After you have cleared stage 1, you will sleep in <strong>Bedroom 2</strong> to visit Dream World 2.</p>
+      <img src="miserereHome.png" alt="layout of the protagonist's home" width="400px">
+    </div> <!-- end of reality-world -->
+
+    <div id="dream-world-1">
+      <h2>Dream World 1</h2>
+      <p>Dream world 1 is pretty conventional (layout-wise). The Nexus has 4 doors for access to numerous sub-worlds, and as you progress you will unlock 2 portals as well.</p>
+      <p>The ultimate goal is to collect all doll parts and give them to the old lady in Paradise World. She will let you through to The Hole (marked by a star on the map) to unlock Dream World 2.</p>
+      <p>You still need to visit Dream World 1 in stage 2 to see some buried memories. That would be in the cauldron room (accessible from Floating Light World).</p>
+      <img src="miserereMapSigned.png" alt="Miserere dream world 1 map. Including lines signifying all accessibilities " width="400px">
+      <p id="notes">*Note: click to view original image<br>
+        <span class="redColor">red line</span>: two-way
+        <span class="pinkColor">pink line</span>: only one-way<br>
+        <span class="greenColor">green item</span>: what u get in this area
+        <span class="grayColor">gray item</span>: what u use (/to get to) this area.
+      </p>
+    </div> <!-- end of dream-world-1 -->
+
+    <div id="dream-world-2">
+      <h2>Dream World 2</h2>
+      <p>Dream World 2 starts off in a leaky apartment. There are 2 doors marked 1 and 2, the first leading to a rusty building, and the second leading to the sewers.</p>
+      <img src="dreamWorld2.png" alt="nexus of dream world 2" width="400px">
+
+    </div> <!-- end of dream-world-2 -->
+
+    <div id="chars">
+      <h2>Characters</h2>
+        <div>
+         <img class="char-img" src="char_main.png" alt="protagonist">
+           <div class="char-description">
+             <p>
+              The red-haired protagonist, living alone away from Earth. Not really human(?), sewer mutant. (Yeah kinda like <em>Fleshchild</em>.) Seems to like movies. Had a collection of books about dreams. His mother was killed by Carrie.
+             </p>
+           </div>
+         </div>
+
+         <div>
+          <img class="char-img" src="char_carrie.png" alt="Carrie">
+          <div class="char-description"
+            <p>
+              A girl named Carrie. She's not quite so innocent as she seems. She is a fine warrior of the organization <em>Terra Puritatem</em>. She's the protagonist's arch enemy. Even though she no longer pose a real threat to the protagonist, she continues to live in his nightmares.
+            </p>
+          </div>
+        </div>
+
+        <div>
+         <img class="char-img" src="char_lhrye.png" alt="Lh'rye">
+         <div class="char-description"
+           <p>
+             Minor character called Lh'rye. standing in front of the stone house east to the stone head. Doesn't do anything, but very wise.
+           </p>
+         </div>
+       </div>
+
+       <div>
+        <img class="char-img" src="char_king_kud.png" alt="King Kud">
+        <div class="char-description"
+          <p>
+            Minor character called King Kud. standing in the Stone Buddha Path. Doesn't do anything, but deeply thankful.
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- end of Characters -->
+    <div>
+      <p>There are many other minor characters in the game but I'm not gonna elaborate on them. Also you'll find many scary-looking but quite harmless NPCs floating around.
+      </p>
+    </div>
+    <div>
+      <a class="go-back" href="#nav-table">Back to top</a>
+    </div>
+
+    </body>
+</html>
