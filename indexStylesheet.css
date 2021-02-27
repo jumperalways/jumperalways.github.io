@@ -39,6 +39,11 @@ th {
   //a hundred divided by number of headers
 }
 
+th a {
+  text-decoration: none;
+  color:inherit;
+}
+
 #toc {// ToC
   text-decoration: none;
   background-color: rgb(50,50,50);
@@ -52,9 +57,12 @@ th {
 #toc a {
   text-decoration: none;
   color:inherit;
-  font-size: 18px;
+  font-size: 1.2em;
 }
-
+#toc a:hover {
+  text-decoration: none;
+  color:rgb(116,146,94);
+}
 /* #nav-table a */
 
 img {
@@ -92,21 +100,37 @@ img {
 
 
 div.charDiv {
-  position:relative;
+  position:absolute;
   width: auto;
-  height: 200px;
+  /*height: 200px;*/
+  height:fit-content;
+  display: block;
+
 }
 
-div.charImg {
-  position:absolute;
-  top:5px;
-  left:5px;
+
+.charImg {
+  float:left;
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
-div.charDescription {
-  position:absolute;
-  top:5px;
-  left:100px;
-  right:5px;
-  width:auto;
+p.charP {
+  clear:both;
+  margin:4px;
+}
+
+.go-back {
+  position:fixed;
+  right:10px;
+  bottom:30px;
+  padding:3px;
+  width:20px;
+  height:40px;
+  font-size: 40px;
+  color:rgb(116,146,94);
+  text-decoration: none;
+}
+.go-back:hover {
+  color:white;
 }
