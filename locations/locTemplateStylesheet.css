@@ -1,0 +1,114 @@
+body {
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: rgb(0,0,0);
+  color:rgb(218,223,206);
+  font-family: "Bookman",serif;
+  font-size: 17px;
+}
+h1 {
+  background-color: inherit;
+}
+h2 {
+  padding:5px;
+  border-color: rgb(150,150,150);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  clear:both;
+}
+h3 {
+  font-size: 1.4em;
+  border-color: rgb(150,150,150);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.imageCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#nav-table {
+  font-family: "Courier New",monospace;
+  width: 100%;
+}
+
+#nav-table th {
+  margin: 5px;
+  padding: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(239,241,235);
+  width: 25%;
+  //a hundred divided by number of headers
+}
+
+div {
+  word-wrap: break-word;
+  background-color: inherit;
+}
+
+div.main{
+  position: relative;
+  width:100%;
+  //height:1000px;
+  //border:1px solid rgb(255,255,255);
+}
+
+div.intro{
+  /*border: 1px solid rgb(255,0,0);*/
+  position:absolute;
+  width:55%;
+  //height:600px;
+  top:1%;
+  left:1%;
+  margin:1%;
+  padding:3px;
+}
+
+div.sidebar {
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  position:absolute;
+  width:35%;
+  top:5px;
+  right:5px;
+  margin:1%;
+  padding: 3px;
+  color:rgb(198,226,186);
+}
+
+.banner{
+  margin-top: 2px;
+  padding:2px;
+  text-align: center;
+  background-color: rgb(40,67,29);
+  color:rgb(198,226,186);
+  border-bottom: 1px solid rgb(198,226,186);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.title{
+  font-size: 1.2em;
+  text-align: center;
+  background-color: rgb(40,67,29);
+
+}
+.entryName{
+
+}
+.info{
+
+}
+.note{
+
+}
+
+/* div.sidebar .pic */
+.pic{
+  /* width:inherit;
+
+  vertical-align: middle;*/
+
+}
