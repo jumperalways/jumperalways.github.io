@@ -5,8 +5,11 @@ var x=500;
 var y=350; // initial position
 var posStr = x*(-1)+"px "+y*(-1)+"px";
 var inCanvas=false;
+var xPrev;
+var yPrev;
 
 $blowup = $("#blowupImg");
+// Creating an OVERLAY that is shaded.
 $("<div>",{id:"overlay"}).css("background-color","rgba(0,0,0,0.6)")
   .css("width","100%")
   .css("height","100%")
@@ -20,7 +23,9 @@ $("<div>",{id:"overlay"}).css("background-color","rgba(0,0,0,0.6)")
   .appendTo("body");
 $("#overlay").hide();
 
-$("<div>",{id:"canvas_section"}).css("margin","auto")
+// creating a CANVAS_SECTION that shows the blownup image ON OVERLAY
+$("<div>",{id:"canvas_section"})
+  .css("margin","auto")
   .css("display","block")
   // above 2 lines make it CENTER
   .css("position","sticky")
@@ -30,8 +35,9 @@ $("<div>",{id:"canvas_section"}).css("margin","auto")
   // moves the picture in the background
   // x y coords of top-left-corner *(-1)
   .css("background-size","1558px 1194px")
-  // specifies how large the bg img img is
+  // specifies how large the bg img is
   // so use this to control the factor of blow up
+  // orig img size is 3116x2388, 1558x1194 is half the orig size
   .css("width","350px")
   .css("height","350px")
   // above 2 lines control the showing 'canvas' size
@@ -39,9 +45,10 @@ $("<div>",{id:"canvas_section"}).css("margin","auto")
 $("#canvas_section").hide();
 //console.log($w);
 
+// click on the image
 $blowup.on("click",function(){
   if (blowupFlag===false) {
-    blowupFlag=!blowupFlag;
+    blowupFlag=!blowupFlag; // if the blownup is not open, OPEN it
       $("#overlay").show();
       $("#canvas_section").show();
       //console.log("overlay created");
@@ -68,6 +75,7 @@ $("#canvas_section").mouseleave(function(){
   $(this).removeClass();
 });
 
+// click on the overlay to CLOSE blownup image
 $("#overlay").on("click",function(e){
   if (blowupFlag){
     $w = $(document).width();
