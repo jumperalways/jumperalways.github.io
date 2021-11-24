@@ -4,8 +4,9 @@ body {
   background-color: rgb(0,0,0);
   color:rgb(218,223,206);
   font-family: "Bookman",serif;
-  /*border: 5px solid red;*/
   font-size: 17px;
+  /*border: 5px solid red;*/
+  word-wrap: break-word;
 }
 h1 {
   background-color: inherit;
@@ -28,25 +29,29 @@ div {
   word-wrap: break-word;
 }
 
-table {
+#nav-table {
   font-family: "Courier New",monospace;
   width: 100%;
 }
-
-th {
+#nav-table th {
   margin: 5px;
   padding: 5px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(239,241,235);
+  border: 2px solid rgb(239,241,235);
   width: 25%;
-  //a hundred divided by number of headers
+}
+#nav-table :hover{
+  border: 2px groove rgb(200,230,160);
+}
+#nav-table th :hover{
+  border-style: none;
 }
 
 th a {
   text-decoration: none;
   color:inherit;
 }
+
+
 
 #toc {// ToC
   text-decoration: none;
@@ -82,7 +87,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:430px;
+  width: 430px;
 }
 
 #notes {
@@ -126,7 +131,7 @@ p.charP {
 
 .go-back {
   position:fixed;
-  right:10px;
+  right:20px;
   bottom:30px;
   padding:3px;
   width:20px;
